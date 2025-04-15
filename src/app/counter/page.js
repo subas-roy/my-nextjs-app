@@ -1,30 +1,12 @@
-'use client'; // Makes the entire serrver component to client component & allows you to use react hooks and event handlers
+import Counter from '@/compenents/Counter';
 
-import { useState } from 'react';
-
-const Counter = () => {
-  const [count, setCount] = useState(0);
-  console.log('hello world form counter');
+const CounterPage = () => {
+  console.log('hello from counter server');
   return (
-    <div className="justify-center">
-      <h1 className="text-lg">Simple Counter</h1>
-      <div>
-        <button
-          className="px-4 py-2 bg-red-500"
-          onClick={() => setCount(count - 1)}
-        >
-          -
-        </button>
-        <span className="px-4 text-2xl">{count}</span>
-        <button
-          className="px-4 py-2 bg-green-500"
-          onClick={() => setCount(count + 1)}
-        >
-          +
-        </button>
-      </div>
+    <div>
+      <Counter />
     </div>
   );
 };
 
-export default Counter;
+export default CounterPage;
