@@ -1,9 +1,10 @@
 import React from 'react';
 
-const DynamicProductPage = () => {
+const DynamicProductPage = async ({ params }) => {
+  const productId = await params.productId;
   return (
     <div>
-      <h1>This is DynamicProductPage</h1>
+      <h1>This is DynamicProductPage {productId}</h1>
     </div>
   );
 };
