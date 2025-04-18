@@ -10,10 +10,7 @@ const HomePage = () => {
 
   return (
     <div className="text-center">
-      <h1 className="text-2xl text-center">Hello world!</h1>
-      <button onClick={handleNavigation} className="py-5">
-        Dashboard
-      </button>
+      <h1 className="text-2xl text-center">Welcome to Next.Js Home Page</h1>
     </div>
   );
 };
