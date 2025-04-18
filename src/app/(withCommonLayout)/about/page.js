@@ -1,7 +1,9 @@
+import styles from './about.module.css';
+
 const AboutPage = () => {
   return (
     <div>
-      <h1 className="text-2xl text-center">AboutPage</h1>
+      <h1 className={styles.text_color}>AboutPage</h1>
     </div>
   );
 };
