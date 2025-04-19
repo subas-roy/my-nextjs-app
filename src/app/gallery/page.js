@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import nextImg from '../../assets/nextjs-img.png';
+
 const GalleryPage = () => {
   return (
     <div className="text-center">
@@ -14,6 +16,24 @@ const GalleryPage = () => {
       <Image
         src="https://nextjs.org/api/docs-og?title=Optimizing:%20Images"
         alt="Next image"
+        width={500}
+        height={500}
+        className="mx-auto"
+      />
+
+      <h1>Local Image</h1>
+      <Image
+        src={nextImg}
+        alt="Local Image"
+        width={500}
+        height={500}
+        className="mx-auto"
+      />
+
+      <h1>Local Image in Regular img Tag</h1>
+      <img
+        src={nextImg}
+        alt="Local Image"
         width={500}
         height={500}
         className="mx-auto"
