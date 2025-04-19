@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import nextImg from '../../assets/nextjs-img.png';
+import nextImg from '@/assets/nextjs-img.png'; // Use Import Aliases (import from absolute path)
 
 const GalleryPage = () => {
   return (
