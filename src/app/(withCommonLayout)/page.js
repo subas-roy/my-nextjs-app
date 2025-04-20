@@ -2,7 +2,7 @@ import ProductCard from '@/compenents/products/ProductCard';
 
 const HomePage = async () => {
   const res = await fetch('http://localhost:5000/products', {
-    cache: 'force-cache', // view content instantly without loading
+    next: { revalidate: 30 }, // After production, if the data (fatched data only) is changed, re-build the data and send it to the production is every 30 sec
   });
   const products = await res.json();
   // console.log(products);
