@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "201",
+      "productName": "ZenBook Pro 15",
+      "category": "Laptops",
+      "brand": "TechZen",
+      "price": 1299.99,
+      "image": "https://nextjs.org/api/docs-og?title=Optimizing:%20Images"
+    },
+    {
+      "id": "202",
+      "productName": "SwiftEdge X14",
+      "category": "Laptops",
+      "brand": "AeroCore",
+      "price": 999.49,
+      "image": "https://nextjs.org/api/docs-og?title=Optimizing:%20Images"
+    },
+    {
+      "id": "203",
+      "productName": "PowerNova G7",
+      "category": "Laptops",
+      "brand": "NovaTech",
+      "price": 1595.0,
+      "image": "https://nextjs.org/api/docs-og?title=Optimizing:%20Images"
+    }
+  ]
+}
