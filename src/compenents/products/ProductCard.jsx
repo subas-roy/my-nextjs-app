@@ -23,13 +23,15 @@ const ProductCard = ({ product }) => {
             {product.category}
           </span>
         </div>
-        <p>
+        <p className="text-gray-800">
           Brand: <span>{product.brand}</span>
         </p>
-        <p>{product.price}</p>
+        <p className="text-gray-800">{product.price}</p>
         <div>
-          <Link href={`/product/${product.id}`}>See Details</Link>
-          <button>Buy Now</button>
+          <Link className="text-gray-800" href={`/product/${product.id}`}>
+            See Details
+          </Link>
+          <button className="text-gray-800">Buy Now</button>
         </div>
       </div>
     </div>
