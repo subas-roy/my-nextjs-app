@@ -8,7 +8,7 @@ const AllProductsPage = async () => {
   // console.log(products);
 
   return (
-    <div>
+    <div className="min-h-screen">
       <h1 className="text-center text-3xl">All Products</h1>
       <div className="grid grid-cols-3 gap-8 w-[90%] mx-auto">
         {products.map((product) => (

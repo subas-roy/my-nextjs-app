@@ -7,7 +7,7 @@ export const metadata = {
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className="min-h-screen">
       <h1 className={styles.text_color}>AboutPage</h1>
     </div>
   );
