@@ -3,6 +3,14 @@
 // In Next.js in which compponents we will fetch data the component must be a server component
 // Function must be async and return a promise
 
+// When to use revalidating, cashing, and static generation/server components?
+// 1. Static Generation: Use when the data doesn't change often and can be generated at build time. Ideal for static sites or pages with infrequent updates.
+// 2. Server Components: Use when you need to fetch data on the server for each request. Ideal for dynamic content that changes frequently or requires server-side processing. This is the default behavior in Next.js app directory.
+// 3. Client Components: Use when you need to handle user interactions or manage local state. Ideal for components that require interactivity or client-side logic. Use 'use client' directive to create a client component.
+// 4. Revalidation: Use when you want to cache data for a specific duration and revalidate it after that period. Ideal for data that changes periodically but doesn't require real-time updates.
+// 5. Caching: Use when you want to cache data for a specific duration and serve it from the cache. Ideal for data that doesn't change often and can be cached for performance optimization.
+// 6. Client-side Fetching: Use when you need to fetch data on the client side after the initial render. Ideal for data that doesn't need to be pre-rendered or requires user interactions to fetch.
+
 import React from 'react';
 
 const PostsPage = async () => {
