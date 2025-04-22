@@ -4,7 +4,7 @@ const AllProductsPage = async () => {
   const res = await fetch('http://localhost:5000/products', {
     cache: 'no-store', // create html file in request-time and fetch latest data
   });
-  const products = await res.json;
+  const products = await res.json();
   // console.log(products);
 
   return (
